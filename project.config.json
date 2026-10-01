@@ -1,0 +1,16 @@
+{
+  "description": "每天3分钟 — 2 岁亲子英语（家长工具 · 音频优先）",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "daily-3min",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false,
+    "urlCheck": false,
+    "coverView": true,
+    "nodeModules": false
+  }
+}

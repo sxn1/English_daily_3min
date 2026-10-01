@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/today/today",
+    "pages/play/play",
+    "pages/checkin/checkin",
+    "pages/progress/progress"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFF6E5",
+    "navigationBarTitleText": "每天3分钟",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFF6E5"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

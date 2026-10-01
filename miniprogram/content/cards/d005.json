@@ -1,0 +1,22 @@
+{
+  "id": "d005",
+  "day": 5,
+  "targetAgeMonths": 24,
+  "theme": "food",
+  "themeZh": "吃饭 · 还要一点",
+  "focusChunk": "more please",
+  "focusChunkZh": "还要一点",
+  "targetWords": ["more", "please"],
+  "parentScriptZh": "吃饭或吃点心的时候用。孩子伸手要的时候先不给，问他 More?，等他说 more、点头或者指一下，再给他，并且说 More please!。一顿饭可以练十几次，比专门坐下来学有效得多。",
+  "audio": {
+    "model": "d005-model.mp3",
+    "song": "d005-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "More please", "zh": "还要一点" },
+    { "en": "All done", "zh": "吃完了" },
+    { "en": "One more, then stop", "zh": "把食物分成小块，一次只给一点" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["more", "please"]
+}

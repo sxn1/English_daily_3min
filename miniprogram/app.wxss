@@ -1,0 +1,69 @@
+/* 全局：低刺激、暖色、无红点无角标。这是给家长的界面，不是给孩子的界面。 */
+
+page {
+  background: #FFF6E5;
+  color: #3D3A33;
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page {
+  padding: 32rpx 32rpx 80rpx;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-size: inherit;
+  background: transparent;
+}
+
+button::after {
+  border: none;
+}
+
+.primary {
+  display: block;
+  width: 100%;
+  padding: 36rpx 0;
+  border-radius: 48rpx;
+  background: #FF9F43;
+  color: #FFFFFF;
+  font-size: 36rpx;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+
+.primary.is-done {
+  background: #FFE3C2;
+  color: #A9662A;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 40rpx;
+  padding: 56rpx 40rpx;
+  box-shadow: 0 8rpx 32rpx rgba(180, 150, 110, 0.12);
+}
+
+.section {
+  margin-top: 48rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  color: #8A8377;
+  letter-spacing: 2rpx;
+  margin-bottom: 20rpx;
+}
+
+.link {
+  margin-top: 40rpx;
+  text-align: center;
+  color: #A9662A;
+  font-size: 28rpx;
+}

@@ -1,0 +1,22 @@
+{
+  "id": "d001",
+  "day": 1,
+  "targetAgeMonths": 24,
+  "theme": "body-parts",
+  "themeZh": "身体 · 拍拍手",
+  "focusChunk": "clap your hands",
+  "focusChunkZh": "拍拍手",
+  "targetWords": ["clap", "hands"],
+  "parentScriptZh": "先放下手机，面对孩子。你一边说 Clap your hands，一边自己拍手，做三次，然后停下看着孩子，等他反应。不要催，也不要替他说。孩子看了你一眼、动了一下手，都算回应。",
+  "audio": {
+    "model": "d001-model.mp3",
+    "song": "d001-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Clap your hands", "zh": "拍拍手" },
+    { "en": "Clap fast, clap slow", "zh": "快快拍、慢慢拍" },
+    { "en": "Clap, clap, stop!", "zh": "拍拍，停！" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["clap", "hands"]
+}

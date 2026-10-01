@@ -1,0 +1,58 @@
+.title {
+  margin-top: 24rpx;
+  font-size: 52rpx;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 24rpx;
+  font-size: 32rpx;
+  color: #3D3A33;
+}
+
+.note {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #8A8377;
+  line-height: 1.8;
+}
+
+.chips {
+  margin-top: 64rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  min-width: 200rpx;
+  padding: 36rpx 40rpx;
+  margin: 0 24rpx 24rpx 0;
+  border-radius: 32rpx;
+  background: #FFFFFF;
+  color: #3D3A33;
+  font-size: 36rpx;
+  text-align: center;
+  box-shadow: 0 4rpx 16rpx rgba(180, 150, 110, 0.1);
+}
+
+.chip.on {
+  background: #4CAF87;
+  color: #FFFFFF;
+}
+
+.picked {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  color: #4CAF87;
+}
+
+.save {
+  margin-top: 64rpx;
+}
+
+.skip {
+  margin-top: 28rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #8A8377;
+}

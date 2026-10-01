@@ -1,0 +1,22 @@
+{
+  "id": "d002",
+  "day": 2,
+  "targetAgeMonths": 24,
+  "theme": "face",
+  "themeZh": "脸 · 鼻子在哪里",
+  "focusChunk": "where's your nose?",
+  "focusChunkZh": "鼻子在哪里",
+  "targetWords": ["nose", "where"],
+  "parentScriptZh": "用手指着自己的鼻子说 Where's your nose?，再轻轻指孩子的鼻子。重复五六次，然后把手停下，看孩子会不会自己摸鼻子。如果他不摸，就再指一次，不要换成中文问。",
+  "audio": {
+    "model": "d002-model.mp3",
+    "song": "d002-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Where's your nose?", "zh": "鼻子在哪里" },
+    { "en": "Where's your mouth?", "zh": "嘴巴在哪里" },
+    { "en": "Where are your eyes?", "zh": "眼睛在哪里" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["nose", "where"]
+}

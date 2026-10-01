@@ -1,0 +1,22 @@
+{
+  "id": "d003",
+  "day": 3,
+  "targetAgeMonths": 24,
+  "theme": "peekaboo",
+  "themeZh": "躲猫猫 · 没有啦",
+  "focusChunk": "all gone",
+  "focusChunkZh": "没有啦",
+  "targetWords": ["gone", "peekaboo"],
+  "parentScriptZh": "用手帕盖住一个小玩具，说 Peekaboo... all gone!，停两秒再揭开说 Peekaboo!。孩子笑的时候就再来一次。这个游戏玩多少次都不嫌多，重复本身就是学习。",
+  "audio": {
+    "model": "d003-model.mp3",
+    "song": "d003-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Peekaboo!", "zh": "躲猫猫" },
+    { "en": "All gone!", "zh": "用布盖住玩具，说没有啦" },
+    { "en": "Where did it go?", "zh": "玩具去哪里了" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["gone", "peekaboo"]
+}

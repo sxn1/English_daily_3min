@@ -1,0 +1,39 @@
+<view class="page">
+  <view class="stats">
+    <view class="stat">
+      <view class="stat-value">{{streak}}</view>
+      <view class="stat-label">连续天数</view>
+    </view>
+    <view class="stat">
+      <view class="stat-value">{{completedCount}}</view>
+      <view class="stat-label">累计完成</view>
+    </view>
+    <view class="stat">
+      <view class="stat-value">{{hitCount}}</view>
+      <view class="stat-label">说过的词</view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">最近 30 天</view>
+    <view class="series">
+      <view
+        class="bar {{item.done ? 'on' : ''}}"
+        wx:for="{{series}}"
+        wx:key="date"
+      ></view>
+    </view>
+    <view class="series-hint">每根柱子是一天，橙色表示当天完成了 3 分钟。</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">孩子说过哪些词</view>
+    <view class="chips">
+      <view class="chip {{item.hit ? 'on' : ''}}" wx:for="{{words}}" wx:key="word">
+        <text>{{item.word}}</text>
+        <text class="chip-count" wx:if="{{item.count > 0}}">×{{item.count}}</text>
+      </view>
+    </view>
+    <view class="series-hint">灰色是还没听到过的词，一共 {{wordCount}} 个。不说话也很正常，先听懂就够了。</view>
+  </view>
+</view>

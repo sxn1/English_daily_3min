@@ -1,0 +1,22 @@
+{
+  "id": "d006",
+  "day": 6,
+  "targetAgeMonths": 24,
+  "theme": "movement",
+  "themeZh": "动作 · 上去下来",
+  "focusChunk": "up and down",
+  "focusChunkZh": "上去、下来",
+  "targetWords": ["up", "down"],
+  "parentScriptZh": "抱着孩子举高说 Up!，放下说 Down!，也可以在沙发上做。动作和词一定要同时发生，孩子会把声音和身体的感受连在一起，这是这个年龄最有效的记法。",
+  "audio": {
+    "model": "d006-model.mp3",
+    "song": "d006-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Up! Down!", "zh": "举高、放下" },
+    { "en": "Jump, jump!", "zh": "跳一跳" },
+    { "en": "Sit down", "zh": "坐下" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["up", "down"]
+}

@@ -1,0 +1,49 @@
+<view class="page">
+  <block wx:if="{{mode === 'prepare'}}">
+    <view class="card">
+      <view class="card-theme">{{card.themeZh}}</view>
+      <view class="card-chunk">{{card.focusChunk}}</view>
+      <view class="card-chunk-cn">{{card.focusChunkZh}}</view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">1 · 先自己听一遍</view>
+      <view class="audio-row">
+        <view class="audio-btn {{playing === 'model' ? 'active' : ''}}" bindtap="onPlayModel">
+          {{playing === 'model' ? '播放中…' : '播放示范'}}
+        </view>
+        <view class="audio-btn {{playing === 'song' ? 'active' : ''}}" bindtap="onPlaySong">
+          {{playing === 'song' ? '播放中…' : '播放儿歌'}}
+        </view>
+      </view>
+      <view class="notice" wx:if="{{audioMissing.model || audioMissing.song}}">
+        这个卡片还没有录音。把 mp3 放进 content/audio/，或在 config.js 里配置音频域名。没有声音也可以直接用下面的动作带孩子玩。
+      </view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">2 · 家长怎么说</view>
+      <view class="script">{{card.parentScriptZh}}</view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">3 · 带孩子做这几件事</view>
+      <view class="activity" wx:for="{{card.offlineActivity}}" wx:key="en">
+        <view class="activity-en">{{item.en}}</view>
+        <view class="activity-zh">{{item.zh}}</view>
+      </view>
+    </view>
+
+    <button class="primary start" bindtap="onStartTimer">放下手机，开始 {{card.durationLabel}}</button>
+  </block>
+
+  <block wx:else>
+    <view class="timer">
+      <view class="timer-label">去和孩子玩吧</view>
+      <view class="timer-value">{{remainingLabel}}</view>
+      <view class="timer-hint">手机已经不需要了，放在旁边就好。</view>
+      <view class="timer-chunk">{{card.focusChunk}}</view>
+      <view class="timer-end" bindtap="onFinishEarly">提前结束</view>
+    </view>
+  </block>
+</view>

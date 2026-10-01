@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="title">今天结束啦</view>
+  <view class="subtitle">孩子今天有没有主动说出下面这些词？</view>
+  <view class="note">可能一个都没有，这很正常。两岁的孩子往往先听懂、后开口，中间隔着好几个月。</view>
+
+  <view class="chips">
+    <view
+      class="chip {{selected[item] ? 'on' : ''}}"
+      wx:for="{{checks}}"
+      wx:key="*this"
+      data-word="{{item}}"
+      bindtap="onToggle"
+    >
+      {{item}}
+    </view>
+  </view>
+
+  <view class="picked" wx:if="{{pickedCount > 0}}">勾了 {{pickedCount}} 个</view>
+
+  <button class="primary save" bindtap="onSave">完成今天的记录</button>
+  <view class="skip">一个都不勾也可以直接完成。</view>
+</view>

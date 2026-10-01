@@ -1,0 +1,13 @@
+{
+  "name": "daily-3min",
+  "version": "0.1.0",
+  "private": true,
+  "description": "每天3分钟 — 2 岁亲子英语小程序 MVP",
+  "scripts": {
+    "validate": "node tools/validate-content.mjs",
+    "recording-script": "node tools/build-recording-script.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

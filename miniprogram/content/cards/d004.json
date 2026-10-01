@@ -1,0 +1,22 @@
+{
+  "id": "d004",
+  "day": 4,
+  "targetAgeMonths": 24,
+  "theme": "animals",
+  "themeZh": "动物 · 狗狗怎么叫",
+  "focusChunk": "what does the dog say?",
+  "focusChunkZh": "狗狗怎么叫",
+  "targetWords": ["dog", "woof"],
+  "parentScriptZh": "学狗叫，越夸张越好。先你来说 Woof woof，再问孩子 What does the dog say?，然后停下来等他。孩子发出任何接近的声音都立刻回应他，重复他的声音再补一遍正确的。",
+  "audio": {
+    "model": "d004-model.mp3",
+    "song": "d004-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Woof woof!", "zh": "学狗叫" },
+    { "en": "What does the cow say? Moo", "zh": "奶牛怎么叫" },
+    { "en": "Let's find the dog", "zh": "去找家里的动物玩具" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["dog", "woof"]
+}

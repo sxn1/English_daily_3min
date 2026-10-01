@@ -1,0 +1,30 @@
+<view class="page">
+  <view class="top">
+    <view class="badge">第 {{day}} 天</view>
+    <view class="streak" wx:if="{{streak > 0}}">连续 {{streak}} 天</view>
+  </view>
+
+  <view class="card">
+    <view class="card-theme">{{card.themeZh}}</view>
+    <view class="card-chunk">{{card.focusChunk}}</view>
+    <view class="card-chunk-cn">{{card.focusChunkZh}}</view>
+    <view class="card-words">
+      <text class="word" wx:for="{{card.targetWords}}" wx:key="*this">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="tips">
+    <view class="tips-line">今天只要 {{card.durationLabel}}。</view>
+    <view class="tips-line">手机只负责放声音，玩的时候请把它放下。</view>
+  </view>
+
+  <button class="primary {{completed ? 'is-done' : ''}}" bindtap="onStart">
+    {{completed ? '再看一遍' : '开始今天的 3 分钟'}}
+  </button>
+
+  <view class="done" wx:if="{{completed}}">今天已经完成，做得很好。</view>
+
+  <view class="review" wx:if="{{isReview}}">内容已经学完一轮，从今天开始循环复习。</view>
+
+  <view class="link" bindtap="onProgress">查看记录 ›</view>
+</view>

@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TaskCard",
+  "description": "一天一张的亲子英语任务卡。字段顺序即产品优先级：offlineActivity 是本体，audio 只是触发器。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "day",
+    "targetAgeMonths",
+    "theme",
+    "themeZh",
+    "focusChunk",
+    "focusChunkZh",
+    "targetWords",
+    "parentScriptZh",
+    "audio",
+    "offlineActivity",
+    "durationSec",
+    "parentChecks"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^d[0-9]{3}$",
+      "description": "卡片 ID，形如 d001"
+    },
+    "day": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "第几天。必须从 1 连续递增且唯一"
+    },
+    "targetAgeMonths": {
+      "type": "integer",
+      "minimum": 18,
+      "maximum": 36,
+      "description": "目标月龄。这个产品只服务 18-36 个月"
+    },
+    "theme": {
+      "type": "string",
+      "description": "英文主题标签，用于统计和后续组课"
+    },
+    "themeZh": {
+      "type": "string",
+      "description": "主题的中文说法，直接显示给家长"
+    },
+    "focusChunk": {
+      "type": "string",
+      "description": "今天的核心语块。必须是短语不是孤立单词"
+    },
+    "focusChunkZh": {
+      "type": "string",
+      "description": "核心语块的中文意思"
+    },
+    "targetWords": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": { "type": "string" },
+      "description": "今天的目标词，控制在 6 个以内"
+    },
+    "parentScriptZh": {
+      "type": "string",
+      "description": "用中文写给家长的动作说明。家长不需要会英语也能执行"
+    },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "song"],
+      "properties": {
+        "model": {
+          "type": ["string", "null"],
+          "description": "真人示范录音的相对路径，未录好时填 null"
+        },
+        "song": {
+          "type": ["string", "null"],
+          "description": "配套短歌的相对路径，未录好时填 null"
+        }
+      }
+    },
+    "offlineActivity": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["en", "zh"],
+        "properties": {
+          "en": { "type": "string" },
+          "zh": { "type": "string" }
+        }
+      },
+      "description": "离屏活动。这是产品的本体，3-4 个动作，家长照着做"
+    },
+    "durationSec": {
+      "type": "integer",
+      "minimum": 60,
+      "maximum": 600,
+      "description": "离屏活动时长，默认 180 秒"
+    },
+    "parentChecks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "给家长勾的观察清单（CDI 式）。必须全部来自 targetWords，且不是给孩子做的测验"
+    }
+  }
+}
