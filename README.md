@@ -47,6 +47,7 @@ docs/
 - [docs/product-design.md](docs/product-design.md) — 产品设计取舍，改需求前先读这份
 - [docs/deploy-wechat.md](docs/deploy-wechat.md) — 部署到微信：类目、备案、审核全流程
 - [docs/content-guide.md](docs/content-guide.md) — 怎么写任务卡
+- [docs/curriculum.md](docs/curriculum.md) — **30 天内容大纲**：四周结构、完整课表、待确认
 
 ## 跑起来
 
