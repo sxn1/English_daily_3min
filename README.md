@@ -60,7 +60,8 @@ docs/
 校验内容（改了卡片后建议跑一次）：
 
 ```bash
-npm run validate
+npm run validate   # 卡片字段、顺序、命名规则
+npm run check      # 页面装配：事件绑定、跳转目标、标签配对
 ```
 
 ## 现在能做什么、还不能做什么

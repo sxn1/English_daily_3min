@@ -5,7 +5,8 @@
   "description": "每天3分钟 — 2 岁亲子英语小程序 MVP",
   "scripts": {
     "validate": "node tools/validate-content.mjs",
-    "recording-script": "node tools/build-recording-script.mjs"
+    "recording-script": "node tools/build-recording-script.mjs",
+    "check": "node tools/check-pages.mjs"
   },
   "engines": {
     "node": ">=18"
