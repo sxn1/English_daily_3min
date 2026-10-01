@@ -48,6 +48,7 @@ docs/
 - [docs/deploy-wechat.md](docs/deploy-wechat.md) — 部署到微信：类目、备案、审核全流程
 - [docs/content-guide.md](docs/content-guide.md) — 怎么写任务卡
 - [docs/curriculum.md](docs/curriculum.md) — **30 天内容大纲**：四周结构、完整课表、待确认
+- [docs/verify-in-devtools.md](docs/verify-in-devtools.md) — **怎么用开发者工具验证**：从下载到走完整流程
 
 ## 跑起来
 
