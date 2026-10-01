@@ -1,0 +1,22 @@
+{
+  "id": "d008",
+  "day": 8,
+  "targetAgeMonths": 24,
+  "theme": "family",
+  "themeZh": "家人 · 妈妈在哪里",
+  "focusChunk": "where's mama?",
+  "focusChunkZh": "妈妈在哪里",
+  "targetWords": ["mama", "dada"],
+  "parentScriptZh": "指着自己说 Mama，指着另一半说 Dada，各说三遍。然后问 Where's mama?，停下来等孩子看你。不要指着自己问「这是谁」——两岁答不了这个问题，但他能听懂「在哪里」。",
+  "audio": {
+    "model": "d008-model.mp3",
+    "song": "d008-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Where's mama?", "zh": "妈妈在哪里" },
+    { "en": "Where's dada?", "zh": "爸爸在哪里" },
+    { "en": "Give it to mama", "zh": "把东西给妈妈" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["mama", "dada"]
+}

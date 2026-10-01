@@ -1,0 +1,22 @@
+{
+  "id": "d015",
+  "day": 15,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "起床 · 醒醒啦",
+  "focusChunk": "wake up!",
+  "focusChunkZh": "醒醒啦",
+  "targetWords": ["wake", "up"],
+  "parentScriptZh": "早上拉开窗帘的时候说 Wake up!，伸懒腰说 Up!。孩子刚醒的时候不要问问题，他答不了。只说这两句，说完就抱他起来。",
+  "audio": {
+    "model": "d015-model.mp3",
+    "song": "d015-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Wake up!", "zh": "醒醒啦" },
+    { "en": "Stretch, stretch", "zh": "一起伸懒腰" },
+    { "en": "Good morning", "zh": "早上好" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["wake", "up"]
+}

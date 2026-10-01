@@ -1,0 +1,22 @@
+{
+  "id": "d017",
+  "day": 17,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "吃饭 · 吃饭啦",
+  "focusChunk": "let's eat",
+  "focusChunkZh": "吃饭啦",
+  "targetWords": ["eat", "yum"],
+  "parentScriptZh": "端上饭的时候说 Let's eat!，孩子吃一口你就说 Yum!，表情要夸张。孩子会先模仿你的表情，慢慢才模仿你的发音，两个都是进步。",
+  "audio": {
+    "model": "d017-model.mp3",
+    "song": "d017-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Let's eat", "zh": "吃饭啦" },
+    { "en": "Yum, yum", "zh": "好吃" },
+    { "en": "Sit down", "zh": "坐下" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["eat", "yum"]
+}

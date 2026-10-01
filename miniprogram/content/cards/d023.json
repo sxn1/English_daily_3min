@@ -1,0 +1,22 @@
+{
+  "id": "d023",
+  "day": 23,
+  "targetAgeMonths": 24,
+  "theme": "animals",
+  "themeZh": "动物 · 鸭子怎么叫",
+  "focusChunk": "what does the duck say?",
+  "focusChunkZh": "鸭子怎么叫",
+  "targetWords": ["duck", "quack"],
+  "parentScriptZh": "鸭子叫要短促。说 Quack quack quack，配上手部开合的动作当鸭嘴。问孩子 What does the duck say? 然后闭嘴等他。这个音的发音难度比 Moo 高，孩子说不准很正常。",
+  "audio": {
+    "model": "d023-model.mp3",
+    "song": "d023-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Quack, quack", "zh": "学鸭子叫，手上做鸭嘴动作" },
+    { "en": "What does the duck say?", "zh": "鸭子怎么叫" },
+    { "en": "Waddle, waddle", "zh": "摇摇摆摆地走" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["duck", "quack"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "d011",
+  "day": 11,
+  "targetAgeMonths": 24,
+  "theme": "tableware",
+  "themeZh": "餐具 · 你的杯子",
+  "focusChunk": "this is your cup",
+  "focusChunkZh": "这是你的杯子",
+  "targetWords": ["cup", "this"],
+  "parentScriptZh": "喝水的时候指着杯子说 This is your cup，再问 Where's your cup?，让孩子指出来。注意问的是「在哪里」，不是「这是什么」——两岁能指认，还不能命名。",
+  "audio": {
+    "model": "d011-model.mp3",
+    "song": "d011-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "This is your cup", "zh": "这是你的杯子" },
+    { "en": "Where's your cup?", "zh": "你的杯子在哪里" },
+    { "en": "Drink some water", "zh": "喝点水" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["cup", "this"]
+}

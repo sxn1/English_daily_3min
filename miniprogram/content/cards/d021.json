@@ -1,0 +1,23 @@
+{
+  "id": "d021",
+  "day": 21,
+  "targetAgeMonths": 24,
+  "theme": "review",
+  "themeZh": "复习 · 再来一次",
+  "focusChunk": "one more time",
+  "focusChunkZh": "再来一次",
+  "targetWords": ["wake", "wash", "eat", "done", "bath", "night"],
+  "parentScriptZh": "今天不教新词。把这周的流程重做一遍，每做完一个说 One more time：起床伸懒腰、洗手、吃饭、洗澡、道晚安。孩子配合哪一个就多做哪一个，不用全做完。",
+  "audio": {
+    "model": "d021-model.mp3",
+    "song": "d021-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Wake up!", "zh": "复习起床" },
+    { "en": "Wash your hands", "zh": "复习洗手" },
+    { "en": "Let's take a bath", "zh": "复习洗澡" },
+    { "en": "Night night", "zh": "复习晚安" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["wake", "wash", "eat", "done", "bath", "night"]
+}

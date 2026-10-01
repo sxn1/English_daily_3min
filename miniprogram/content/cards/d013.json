@@ -1,0 +1,22 @@
+{
+  "id": "d013",
+  "day": 13,
+  "targetAgeMonths": 24,
+  "theme": "actions",
+  "themeZh": "开关 · 开门关门",
+  "focusChunk": "open the door",
+  "focusChunkZh": "开门",
+  "targetWords": ["open", "close"],
+  "parentScriptZh": "开门说 Open the door，关门说 Close the door。家里的柜子、抽屉、绘本都能用。动作和词必须同时发生——两岁就是靠这个把声音和意思连起来的。",
+  "audio": {
+    "model": "d013-model.mp3",
+    "song": "d013-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Open the door", "zh": "开门" },
+    { "en": "Close the door", "zh": "关门" },
+    { "en": "Open, close, open, close", "zh": "反复开关，节奏逐渐加快" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["open", "close"]
+}

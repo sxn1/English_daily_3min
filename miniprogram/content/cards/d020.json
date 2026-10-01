@@ -1,0 +1,22 @@
+{
+  "id": "d020",
+  "day": 20,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "睡觉 · 晚安",
+  "focusChunk": "night night",
+  "focusChunkZh": "晚安",
+  "targetWords": ["bed", "night"],
+  "parentScriptZh": "抱到床上的时候说 Night night，关灯说 Night night, light，跟每个人说一遍 Night night, mama。每天用同一句话，孩子会把这句话和睡觉连在一起，之后这句话本身就能让他安静下来。",
+  "audio": {
+    "model": "d020-model.mp3",
+    "song": "d020-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Night night", "zh": "晚安" },
+    { "en": "Go to bed", "zh": "上床" },
+    { "en": "Turn off the light", "zh": "关灯" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["bed", "night"]
+}

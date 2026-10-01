@@ -1,0 +1,22 @@
+{
+  "id": "d018",
+  "day": 18,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "吃完 · 吃完了",
+  "focusChunk": "all done",
+  "focusChunkZh": "吃完了",
+  "targetWords": ["done", "more"],
+  "parentScriptZh": "孩子吃完的时候说 All done!，把碗推开也配这句话。如果他还想要，问 More?，等他用动作或声音回应再给他。不要在他已经吃饱的时候继续喂。",
+  "audio": {
+    "model": "d018-model.mp3",
+    "song": "d018-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "All done", "zh": "吃完了" },
+    { "en": "More please", "zh": "还要一点" },
+    { "en": "Wipe your face", "zh": "擦擦嘴" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["done", "more"]
+}

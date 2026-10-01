@@ -1,0 +1,22 @@
+{
+  "id": "d024",
+  "day": 24,
+  "targetAgeMonths": 24,
+  "theme": "animals",
+  "themeZh": "动物 · 猫怎么叫",
+  "focusChunk": "what does the cat say?",
+  "focusChunkZh": "猫怎么叫",
+  "targetWords": ["cat", "meow"],
+  "parentScriptZh": "猫叫要柔和拉长：Meooow。今天可以把前三天的动物连起来考一遍：奶牛、鸭子、猫，每问一个都停下来等。孩子答不出哪一个就先跳过，不要纠正。",
+  "audio": {
+    "model": "d024-model.mp3",
+    "song": "d024-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Meooow", "zh": "学猫叫，声音轻一点软一点" },
+    { "en": "What does the cat say?", "zh": "猫怎么叫" },
+    { "en": "Moo, quack, meow", "zh": "把三个动物叫声连着说一遍" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["cat", "meow"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "d030",
+  "day": 30,
+  "targetAgeMonths": 24,
+  "theme": "review",
+  "themeZh": "第 30 天 · 你做到了",
+  "focusChunk": "you did it!",
+  "focusChunkZh": "你做到了",
+  "targetWords": ["you", "did"],
+  "parentScriptZh": "最后一天。挑孩子最爱的三样玩一遍，玩完抱着他说 You did it! 然后打开小程序的「查看记录」，看看这一个月他听懂了哪些词。灰色多是很正常的——两岁先听懂、后开口，中间隔着好几个月。",
+  "audio": {
+    "model": "d030-model.mp3",
+    "song": "d030-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "You did it!", "zh": "抱着孩子说这句话" },
+    { "en": "One more time", "zh": "玩孩子最喜欢的那一个" },
+    { "en": "Night night", "zh": "用晚安结束这一个月" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["you", "did"]
+}

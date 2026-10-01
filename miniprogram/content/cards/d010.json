@@ -1,0 +1,22 @@
+{
+  "id": "d010",
+  "day": 10,
+  "targetAgeMonths": 24,
+  "theme": "toys",
+  "themeZh": "玩具 · 球在哪里",
+  "focusChunk": "where's the ball?",
+  "focusChunkZh": "球在哪里",
+  "targetWords": ["ball", "where"],
+  "parentScriptZh": "把球滚到沙发底下，说 Where's the ball?，再一起找出来说 There it is!。孩子找到的时候要立刻回应他。找不到也没关系，把球藏起来本身就好玩。",
+  "audio": {
+    "model": "d010-model.mp3",
+    "song": "d010-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Where's the ball?", "zh": "球在哪里" },
+    { "en": "There it is!", "zh": "找到的时候说在这里" },
+    { "en": "Roll the ball", "zh": "把球滚过来滚过去" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["ball", "where"]
+}

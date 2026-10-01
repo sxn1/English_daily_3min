@@ -1,0 +1,23 @@
+{
+  "id": "d014",
+  "day": 14,
+  "targetAgeMonths": 24,
+  "theme": "review",
+  "themeZh": "复习 · 再玩一次",
+  "focusChunk": "let's do it again",
+  "focusChunkZh": "再玩一次",
+  "targetWords": ["mama", "dada", "baby", "ball", "cup", "shoes"],
+  "parentScriptZh": "今天不教新词。把这周玩过的动作随便挑几样重做一遍：找家人、递东西、找球、认杯子、穿鞋。做完一个说 Let's do it again。你的任务只是观察孩子还记得哪些，记不住完全正常。",
+  "audio": {
+    "model": "d014-model.mp3",
+    "song": "d014-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Where's mama?", "zh": "复习妈妈在哪里" },
+    { "en": "Give it to baby", "zh": "复习递给宝宝" },
+    { "en": "Where's the ball?", "zh": "复习球在哪里" },
+    { "en": "Put on your shoes", "zh": "复习穿鞋" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["mama", "dada", "baby", "ball", "cup", "shoes"]
+}

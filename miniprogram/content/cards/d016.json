@@ -1,0 +1,22 @@
+{
+  "id": "d016",
+  "day": 16,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "洗手 · 洗洗小手",
+  "focusChunk": "wash your hands",
+  "focusChunkZh": "洗手",
+  "targetWords": ["wash", "hands"],
+  "parentScriptZh": "洗手的时候说 Wash your hands，一边搓一边说 Rub, rub, rub。洗完说 All done。这句话每天至少能说五遍，孩子很快就懂了。",
+  "audio": {
+    "model": "d016-model.mp3",
+    "song": "d016-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Wash your hands", "zh": "洗手" },
+    { "en": "Rub, rub, rub", "zh": "搓搓搓" },
+    { "en": "All done", "zh": "洗好了" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["wash", "hands"]
+}

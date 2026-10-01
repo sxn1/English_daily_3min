@@ -1,0 +1,23 @@
+{
+  "id": "d028",
+  "day": 28,
+  "targetAgeMonths": 24,
+  "theme": "review",
+  "themeZh": "复习 · 准备好了吗",
+  "focusChunk": "ready? go!",
+  "focusChunkZh": "准备好了吗？开始",
+  "targetWords": ["cow", "duck", "cat", "run", "jump", "walk"],
+  "parentScriptZh": "今天不教新词。动物叫声、跑、跳、走停，随便挑几样重玩。每样开始前说 Ready? Go!。孩子听到 Ready 就开始期待，这个期待本身就说明他在理解语言。",
+  "audio": {
+    "model": "d028-model.mp3",
+    "song": "d028-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Ready? Go!", "zh": "准备好了吗，开始" },
+    { "en": "Moo, quack, meow", "zh": "复习三个动物叫声" },
+    { "en": "Walk, walk, stop!", "zh": "复习走和停" },
+    { "en": "Jump up!", "zh": "复习跳" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["cow", "duck", "cat", "run", "jump", "walk"]
+}

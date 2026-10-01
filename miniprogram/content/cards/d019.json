@@ -1,0 +1,22 @@
+{
+  "id": "d019",
+  "day": 19,
+  "targetAgeMonths": 24,
+  "theme": "routine",
+  "themeZh": "洗澡 · 洗澡啦",
+  "focusChunk": "let's take a bath",
+  "focusChunkZh": "洗澡啦",
+  "targetWords": ["bath", "water"],
+  "parentScriptZh": "放水的时候说 Water! 抱进浴室说 Let's take a bath。拍水说 Splash, splash。洗澡是两岁最喜欢的场景，语言输入量能顶平时好几分钟。",
+  "audio": {
+    "model": "d019-model.mp3",
+    "song": "d019-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Let's take a bath", "zh": "洗澡啦" },
+    { "en": "Water!", "zh": "水" },
+    { "en": "Splash, splash", "zh": "拍水" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["bath", "water"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "d027",
+  "day": 27,
+  "targetAgeMonths": 24,
+  "theme": "movement",
+  "themeZh": "运动 · 走和停",
+  "focusChunk": "walk, walk, stop!",
+  "focusChunkZh": "走走走，停",
+  "targetWords": ["walk", "stop"],
+  "parentScriptZh": "牵着孩子慢慢走，边走边说 Walk, walk, walk，然后突然说 Stop! 自己也停住不动。这个游戏练的是自控力，不只是语言。孩子会等着你说 Stop，那一刻他已经听懂整句话了。",
+  "audio": {
+    "model": "d027-model.mp3",
+    "song": "d027-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Walk, walk, walk", "zh": "走走走" },
+    { "en": "Stop!", "zh": "突然停住" },
+    { "en": "Go!", "zh": "继续走" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["walk", "stop"]
+}

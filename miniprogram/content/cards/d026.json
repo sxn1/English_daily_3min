@@ -1,0 +1,22 @@
+{
+  "id": "d026",
+  "day": 26,
+  "targetAgeMonths": 24,
+  "theme": "movement",
+  "themeZh": "运动 · 跳一跳",
+  "focusChunk": "jump up and down",
+  "focusChunkZh": "跳上跳下",
+  "targetWords": ["jump", "up", "down"],
+  "parentScriptZh": "扶着孩子的双手说 Jump up!，跟着他一起跳。落地的时候说 Down!。两岁大多还跳不起来，但只要他弯腿、蹬地、脚离地一点点，就立刻大声说 Jump! 给他回应。",
+  "audio": {
+    "model": "d026-model.mp3",
+    "song": "d026-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Jump up!", "zh": "跳起来" },
+    { "en": "Down!", "zh": "落地的时候说下来" },
+    { "en": "Jump, jump, jump", "zh": "连着跳几下" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["jump", "up", "down"]
+}

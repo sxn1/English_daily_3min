@@ -1,0 +1,23 @@
+{
+  "id": "d029",
+  "day": 29,
+  "targetAgeMonths": 24,
+  "theme": "review",
+  "themeZh": "综合复习 · 全都再来一遍",
+  "focusChunk": "let's do it all again",
+  "focusChunkZh": "全都再来一遍",
+  "targetWords": ["mama", "ball", "cup", "wash", "bath", "cow"],
+  "parentScriptZh": "今天不教新词。四周玩过的内容随便挑几样重做。重点不是做完，而是观察：哪几个词孩子一听就有反应？哪几个他完全没反应？记下来，明天最后一次用得上。",
+  "audio": {
+    "model": "d029-model.mp3",
+    "song": "d029-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Where's mama?", "zh": "复习找人" },
+    { "en": "Where's the ball?", "zh": "复习找球" },
+    { "en": "Wash your hands", "zh": "复习洗手" },
+    { "en": "What does the cow say?", "zh": "复习动物叫声" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["mama", "ball", "cup", "wash", "bath", "cow"]
+}

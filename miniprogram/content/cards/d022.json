@@ -1,0 +1,22 @@
+{
+  "id": "d022",
+  "day": 22,
+  "targetAgeMonths": 24,
+  "theme": "animals",
+  "themeZh": "动物 · 奶牛怎么叫",
+  "focusChunk": "what does the cow say?",
+  "focusChunkZh": "奶牛怎么叫",
+  "targetWords": ["cow", "moo"],
+  "parentScriptZh": "学牛叫，声音要低要长。先你说 Mooooo，再问 What does the cow say?，然后停下等孩子。他发出任何接近的声音都立刻回应，重复他的声音再补一遍正确的。",
+  "audio": {
+    "model": "d022-model.mp3",
+    "song": "d022-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Mooooo", "zh": "学奶牛叫，声音低一点长一点" },
+    { "en": "What does the cow say?", "zh": "奶牛怎么叫" },
+    { "en": "Where's the cow?", "zh": "找出动物玩具里的奶牛" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["cow", "moo"]
+}

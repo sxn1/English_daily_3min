@@ -1,0 +1,22 @@
+{
+  "id": "d025",
+  "day": 25,
+  "targetAgeMonths": 24,
+  "theme": "movement",
+  "themeZh": "运动 · 跑起来",
+  "focusChunk": "let's run",
+  "focusChunkZh": "跑起来",
+  "targetWords": ["run", "fast"],
+  "parentScriptZh": "说 Let's run! 然后真的跑起来，孩子会追你。跑一会儿说 Stop，突然停下，再开始。快慢交替最能吸引两岁孩子，Run fast! Run slow! 一天玩几次都不嫌多。",
+  "audio": {
+    "model": "d025-model.mp3",
+    "song": "d025-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Let's run", "zh": "跑起来" },
+    { "en": "Run fast! Run slow", "zh": "快快跑，慢慢跑" },
+    { "en": "Stop!", "zh": "突然停下来" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["run", "fast"]
+}

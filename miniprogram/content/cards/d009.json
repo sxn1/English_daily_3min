@@ -1,0 +1,22 @@
+{
+  "id": "d009",
+  "day": 9,
+  "targetAgeMonths": 24,
+  "theme": "family",
+  "themeZh": "家人 · 给宝宝",
+  "focusChunk": "give it to baby",
+  "focusChunkZh": "给宝宝",
+  "targetWords": ["give", "baby"],
+  "parentScriptZh": "拿一个玩具递给孩子，说 Give it to baby, here you go。再把玩具递给孩子，让他拿给你，说 Give it to mama。两岁递东西给喜欢的人已经很熟练，今天只是把这个动作配上声音。",
+  "audio": {
+    "model": "d009-model.mp3",
+    "song": "d009-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Give it to mama", "zh": "给妈妈" },
+    { "en": "Give it to baby", "zh": "给宝宝" },
+    { "en": "Here you go", "zh": "递东西的时候说给你" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["give", "baby"]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "d012",
+  "day": 12,
+  "targetAgeMonths": 24,
+  "theme": "clothing",
+  "themeZh": "穿鞋 · 穿上鞋子",
+  "focusChunk": "put on your shoes",
+  "focusChunkZh": "穿上鞋子",
+  "targetWords": ["shoes", "on"],
+  "parentScriptZh": "出门穿鞋的时候说 Put on your shoes，一边穿一边说，不要提前说也不要事后说。穿好以后抬高声音说 Shoes on! 脱鞋的时候说 Shoes off。",
+  "audio": {
+    "model": "d012-model.mp3",
+    "song": "d012-song.mp3"
+  },
+  "offlineActivity": [
+    { "en": "Put on your shoes", "zh": "穿上鞋子" },
+    { "en": "Shoes on!", "zh": "穿好了" },
+    { "en": "Shoes off", "zh": "脱鞋" }
+  ],
+  "durationSec": 180,
+  "parentChecks": ["shoes", "on"]
+}
