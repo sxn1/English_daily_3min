@@ -61,8 +61,10 @@ docs/
 校验内容（改了卡片后建议跑一次）：
 
 ```bash
-npm run validate   # 卡片字段、顺序、命名规则
-npm run check      # 页面装配：事件绑定、跳转目标、标签配对
+npm run build:cards       # 把 d*.json 内联进 cards/index.js（改完卡片必须跑）
+npm run validate          # 卡片字段、顺序、命名规则，并检查是否忘记重新生成
+npm run check             # 页面装配：事件绑定、跳转目标、标签配对
+npm run recording-script  # 重新生成录音清单
 ```
 
 ## 现在能做什么、还不能做什么

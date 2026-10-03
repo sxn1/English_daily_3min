@@ -9,6 +9,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { renderCardsJs, sortCards } from './card-bundle.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const cardsDir = join(root, 'miniprogram/content/cards');
@@ -144,17 +145,15 @@ cards.forEach(({ name, card }, i) => {
   }
 });
 
-// index.js 必须按顺序、不遗漏地列出所有卡片
-const indexSource = readFileSync(indexPath, 'utf8');
-const listed = [...indexSource.matchAll(/require\('\.\/(d\d{3}\.json)'\)/g)].map((m) => m[1]);
-if (listed.length !== files.length) {
-  fail('cards/index.js', `列出了 ${listed.length} 张卡，但目录里有 ${files.length} 个文件`);
+// index.js 必须和 JSON 源文件保持同步。
+// 小程序打包器不支持 require('xxx.json')，所以卡片是被内联进 index.js 的，
+// 改了 JSON 却忘记重新生成，小程序加载的就是旧数据，而且不会报错。
+const expectedIndex = renderCardsJs(
+  sortCards(cards.filter((entry) => entry.card).map((entry) => entry.card))
+);
+if (readFileSync(indexPath, 'utf8') !== expectedIndex) {
+  fail('cards/index.js', '和 d*.json 不同步，跑一下 `npm run build:cards`');
 }
-files.forEach((name, i) => {
-  if (listed[i] !== name) {
-    fail('cards/index.js', `第 ${i + 1} 个 require 应该是 ${name}，实际是 ${listed[i] || '空'}`);
-  }
-});
 
 // 语块必须是短语，不是孤立的单词
 cards.forEach(({ name, card }) => {

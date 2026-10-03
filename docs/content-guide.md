@@ -4,9 +4,11 @@
 
 1. 复制 `miniprogram/content/cards/d007.json` 为 `d008.json`。
 2. 改 `id`（必须和文件名一致）、`day`（必须比上一张多 1）、内容。
-3. 在 `miniprogram/content/cards/index.js` 末尾加一行 `require('./d008.json'),`。
-4. 跑 `npm run validate`。
+3. 跑 `npm run build:cards`，把新卡内联进 `miniprogram/content/cards/index.js`。
+4. 跑 `npm run validate` 检查字段和顺序。
 5. 跑 `npm run recording-script`，录音清单会自动加上新卡的两个文件。
+
+**第 3 步不能省。** `index.js` 是从 JSON 生成的，手动编辑会被下次生成覆盖；忘记了则会加载旧数据，而且不会报错。校验脚本会拦住这种情况。
 
 ## 字段怎么写
 

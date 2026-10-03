@@ -114,7 +114,7 @@ AppID     工具会自动读到 touristappid，用「测试号」即可
 
 ### 报 `require` 相关错误
 
-卡片是 JSON 文件，靠 `require('./d001.json')` 加载。如果打包器不支持这种写法，报错信息会明确指出来。把报错发我，改成 `.js` 文件导出对象就行。
+如果看到类似 `module 'content/cards/d001.json.js' is not defined` 的报错，说明拿到的是旧版本代码。**这个问题已经修复**：卡片现在内联在 `miniprogram/content/cards/index.js` 里，不再 require JSON 文件。重新从 GitHub 下载一份即可。
 
 ### 播放按钮点了没反应
 
