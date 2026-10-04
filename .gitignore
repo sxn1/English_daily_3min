@@ -2,6 +2,11 @@ node_modules/
 .DS_Store
 project.private.config.json
 
+# 占位音频全量（TTS 生成，给 CDN 用）。
+# 不进版本库：它是临时的，随时可以用 `npm run make-placeholder-audio` 重建，
+# 而且正式录音到位后要整个删掉，没必要留在 git 历史里。
+assets/audio/
+
 # 录音默认纳入版本管理，避免录好的音频只在某台机器上。
 # 音频迁到 CDN 之后，如果不想再把二进制放在 git 里，取消下面两行注释：
 # miniprogram/content/audio/*.mp3
