@@ -24,7 +24,13 @@
 
   <view class="done" wx:if="{{completed}}">今天已经完成，做得很好。</view>
 
+  <view class="next" wx:if="{{completed && nextCard}}">
+    明天 · 第 {{nextCard.day}} 天 · {{nextCard.themeZh}}
+  </view>
+
   <view class="review" wx:if="{{isReview}}">内容已经学完一轮，从今天开始循环复习。</view>
 
   <view class="link" bindtap="onProgress">查看记录 ›</view>
+
+  <view class="dev" wx:if="{{allowSkipDay}}" bindtap="onSkipDay">跳到下一天（测试用）›</view>
 </view>

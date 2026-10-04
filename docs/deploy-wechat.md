@@ -97,6 +97,14 @@ audioBase: '',            // 填 CDN 域名，例如 'https://cdn.example.com/au
 subscribeTemplateId: ''   // 填订阅消息模板 ID
 ```
 
+还有一项必须改：
+
+```js
+allowSkipDay: true        // 发布前改成 false
+```
+
+这是首页底部「跳到下一天（测试用）」的开关。留在 `true` 的话，家长可以一天把 30 张卡全部刷完，产品就失去了「每天 3 分钟」的意义。
+
 **音频必须走云存储或 CDN。** 小程序主包上限 2MB，音频放包内会直接超限。
 
 如果你用微信云开发云存储，**这一步可以直接跳过**——`InnerAudioContext.src` 从基础库 2.2.3 起支持云文件 ID，不需要配域名也不需要备案。三种方案的完整对比见 `docs/audio-hosting.md`。
@@ -163,6 +171,7 @@ subscribeTemplateId: ''   // 填订阅消息模板 ID
 - [ ] `npm run validate` 通过
 - [ ] 真机预览走通完整流程：今日卡片 → 播放 → 倒计时 → 打卡 → 记录
 - [ ] 后台《用户隐私保护指引》已填写
+- [ ] `config.js` 的 `allowSkipDay` 已改成 `false`
 - [ ] 审核「功能说明」文案已准备
 
 ---

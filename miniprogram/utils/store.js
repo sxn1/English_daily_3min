@@ -145,6 +145,17 @@ function reset() {
   write(freshState());
 }
 
+/**
+ * 把进度往前推一天：起始日期减一天，「第 N 天」自然变成 N+1。
+ * 只给开发和演示用，通过 config.allowSkipDay 控制是否暴露给用户。
+ */
+function skipToNextDay() {
+  const state = getState();
+  state.startDate = shiftKey(state.startDate, -1);
+  write(state);
+  return getDayNumber();
+}
+
 module.exports = {
   ensureInit,
   getState,
@@ -157,5 +168,6 @@ module.exports = {
   getRecentSeries,
   getVocabulary,
   reset,
+  skipToNextDay,
   todayKey
 };
